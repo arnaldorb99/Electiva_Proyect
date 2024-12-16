@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icono.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1 class="title">Ranking Musical</h1>
+
+    <!-- Controles -->
+    <button class="rating-button" onclick="cambio_aleatorio()">Mezclar Ranking</button>
+    <button class="rating-button" onclick="exportar_PDF()">Crear PDF</button>
+
+    <!-- Lista de canciones -->
+    <ul class="song-list" id="songList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e90ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    color: white;
+    background-color: #ff5733;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 330px;
+    height:1px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.position span {
+    font-size: 12px;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    text-align: left;
+}
+
+.title-trapezoid {
+    
+    color: white;
+    padding: 10px;
+    background-color: #ff5733;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    margin-bottom: 5px;
+    width: fit-content;
+    white-space: nowrap;
+    padding-right: calc(10px + 8px);
+}
+
+.artist-trapezoid {
+    
+    color: white;
+    padding: 10px;
+    background-color: #28a745;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    margin-bottom: 5px;
+    width: fit-content;
+    white-space: nowrap;
+    padding-right: calc(10px + 5px);
+}
+
+.rating-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px 10;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente si se necesita */
+  gap: 15px; /* Espacio entre la bola y el icono */
+  padding: 10px; /* Espaciado interno */
+}
+.circle{
+  width: 30px;
+  height: 30px;
+  background-color:#22ff29; 
+  border-radius: 50%; /* Círculo */
+  color: black; /* Color del número */
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+.icon {
+  width: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+}
+
+rating-button:hover {
+    background-color: #c70039;
+}
